@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <div class="mae">
+        <div class="capa">
+            <div class="visor">
+               <p id="opera-nume">1+1</p> 
+                <p id="res">6</p>
+            </div>
+            <div class="operacoes">
+                <button id="soma" onclick="insert('+')">+</button>
+                <button id="sub" onclick="insert('-')">-</button>
+                <button id="mult" onclick="insert('*')">x</button>
+                <button id="div" onclick="insert('/')"">/</button>
+            </div>
+            <div class="baixera">
+                <div id="numeros">
+                    <button id="um" onclick="insert('1')" >1</button>
+                    <button id="dois" onclick="insert('2')">2</button>
+                    <button id="tres" onclick="insert('3')">3</button> <br>
+                    <button id="quatro" onclick="insert('4')">4</button>
+                    <button id="cinco" onclick="insert('5')">5</button>
+                    <button id="sex" onclick="insert('6')">6</button> <br>
+                    <button id="sete" onclick="insert('7')">7</button>
+                    <button id="oito" onclick="insert('8')">8</button>
+                    <button id="nove" onclick="insert('9')">9</button> <br>
+                    <button id="zero" onclick="insert('0')">0</button>
+                </div>
+                <div id="opera">
+                    <div id="apagar">
+                      <button id="ponto" onclick="insert('.')">.</button>
+                    <button id="delete" onclick="clear()">C</button>
+                
+                    </div>
+                    <button id="igual" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
